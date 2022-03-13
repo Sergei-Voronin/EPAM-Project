@@ -1,0 +1,1 @@
+create table test_table (id integer not null, author varchar(255), title varchar(255), test varchar(255), primary key (id));

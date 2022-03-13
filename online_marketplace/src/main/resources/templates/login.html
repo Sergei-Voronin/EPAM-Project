@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<link href="css_reg\style_form.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<form id="loginForm" method="POST" action="/login">
+<h1>Войти на сайт</h1>
+	<div class="field">
+		<label for="username">Имя пользователя:</label>
+		<div class="input"><input name="username" type="text" id="username" /></div>
+	</div>
+
+	<div class="field">
+		
+		<label for="password">Пароль:</label>
+		<div class="input"><input name="password" type="password" id="password" /></div>
+	</div>
+
+	<div class="submit">
+		<button type="submit">Войти</button>
+		<a href="/registration" id="forgot">Зарегистрироваться</a>
+	</div>
+
+</form>
+
+</body>
+</html>

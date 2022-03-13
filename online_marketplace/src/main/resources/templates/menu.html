@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+    <div th:fragment="simple_menu">
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">							
+					<li>
+                        <a href="/login">Вход</a>
+                    </li>
+                    <li>
+                        <a href="/registration">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+	
+	    <div th:fragment="admin_menu">
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">							
+					<li>
+                        <a href="/admin">Страница админа</a>
+                    </li>                  
+					<li>
+                         <a href="/logout">Выход</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+	
+	    <div th:fragment="user_menu">
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">							
+					 <li>
+                        <a href="/news">Страница пользователя</a>
+                    </li>
+					<li>
+                         <a href="/logout">Выход</a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+	
+  </body>
+</html>

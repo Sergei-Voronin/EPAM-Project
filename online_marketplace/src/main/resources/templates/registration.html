@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<link href="css_reg\style_form.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<form id="loginForm" method="POST" action="/registration">
+<h1>Регистрация</h1>
+	<!--<div class="field">
+		<label for="firstName">Имя:</label>
+		<div class="input"><input input name="firstName" type="text" id="firstName" /></div>
+	</div>
+	<div class="field">
+		<label for="lastName">Фамилия:</label>
+		<div class="input"><input input name="lastName" type="text" id="lastName" /></div>
+	</div>-->
+
+	<div class="field">
+		<label for="username">Имя пользователя (логин):</label>
+		<div class="input"><input input name="username" type="text" id="username" /></div>
+		<p th:text="${usernameError}"></p>
+	</div>
+	
+	<div class="field">
+		<label for="email">Электронная почта:</label>
+		<div class="input"><input input name="email" type="text" id="email" /></div>
+	</div>
+
+	<div class="field">
+		<label for="password">Пароль:</label>
+		<div class="input"><input name="password" type="password" id="password" /></div>
+		<p th:text="${passwordError}"></p>
+	</div>
+	
+	
+	
+	<div class="field">
+		<label for="passwordConfirm">Повторите пароль:</label>
+		<div class="input"><input name="passwordConfirm" type="password" id="passwordConfirm" /></div>
+	</div>
+
+	<div class="submit">
+		<button type="submit">Регистрация</button>
+		
+		<a href="/" id="forgot">Вернуться на главную</a>
+	</div>
+
+</form>
+
+</body>
+</html>
